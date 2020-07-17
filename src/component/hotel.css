@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.AddRoom{
+    margin: auto;
+    width: 500px;
+    /* border: solid 1px black; */
+}
+.AddRoom input, select, button.add{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+}
+.Room{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px 300px ;
+    margin: 10px;
+    padding: 10px;
+}
+.Room div{
+    border: solid 1px black;
+    text-align: center;
+     margin: 10px;
+}
