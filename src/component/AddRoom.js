@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./hotel.css";
 
-class CreateRoom extends Component {
+class AddRoom extends Component {
   constructor() {
     super();
     this.typerooms = [
@@ -50,6 +50,7 @@ class CreateRoom extends Component {
         <h3>Add Room</h3>
         <input type="text" name="id" placeholder="id" required/>
         <input type="text" name="name" placeholder="Tên phòng" required/>
+        <input type="file" name="image" placeholder="Hình ảnh" required/>
         <select name="typeroom" id="typeroom">
           {typerooms.map((name) => (
             <option value={name.name}>{name.name}</option>
@@ -64,4 +65,4 @@ class CreateRoom extends Component {
     );
   }
 }
-export default CreateRoom;
+export default AddRoom;

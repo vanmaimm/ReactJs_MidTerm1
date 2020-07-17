@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./component/Home";
-import CreateRoom from "./component/CreateRoom";
+import AddRoom from "./component/AddRoom";
 class App extends React.Component {
   constructor() {
     super();
@@ -42,7 +42,7 @@ class App extends React.Component {
         <hr />
         <Switch>
           <Route exact path="/" component={Home} exact />
-          <Route path="/addRoom" component={CreateRoom} />
+          <Route path="/addRoom" component={AddRoom} />
         </Switch>
       </Router>
     );
